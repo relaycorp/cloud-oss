@@ -54,47 +54,47 @@ module "awala_lib_keystore_db_js" {
   ci_contexts  = local.lib_nodejs_v12_to_v16_ci_contexts
 }
 
-#module "awala_lib_pohttp_js" {
-#  source  = "relaycorp/oss-project/github"
-#  version = "1.0.1"
-#
-#  name         = "relaynet-pohttp-js"
-#  description  = "JavaScript library implementing the PoHTTP binding"
-#  homepage_url = "https://docs.relaycorp.tech/relaynet-pohttp-js/"
-#  licence      = "mit"
-#  topics       = ["awala", "awala-binding-pohttp"]
-#  main_branch  = "master"
-#  ci_contexts  = local.lib_js_active_nodejs_ci_contexts
-#
-#  pages_source_path = "/"
-#}
-#
-#module "awala_lib_cogrpc_js" {
-#  source  = "relaycorp/oss-project/github"
-#  version = "1.0.1"
-#
-#  name         = "relaynet-cogrpc-js"
-#  description  = "JavaScript library implementing the CogRPC binding"
-#  homepage_url = "https://docs.relaycorp.tech/relaynet-cogrpc-js/"
-#  licence      = "mit"
-#  topics       = ["awala", "awala-binding-cogrpc"]
-#  ci_contexts  = ["ci (12)"]
-#  main_branch  = "master"
-#
-#  pages_source_path = "/"
-#}
-#
-#module "awala_lib_poweb_js" {
-#  source  = "relaycorp/oss-project/github"
-#  version = "1.0.1"
-#
-#  name         = "relaynet-poweb-js"
-#  description  = "JavaScript implementation of the PoWeb binding"
-#  homepage_url = "https://docs.relaycorp.tech/relaynet-poweb-js/"
-#  licence      = "mit"
-#  topics       = ["awala", "awala-binding-poweb"]
-#  ci_contexts  = local.lib_nodejs_v12_to_v14_ci_contexts
-#  main_branch  = "master"
-#
-#  pages_source_path = "/"
-#}
+module "awala_lib_pohttp_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "relaynet-pohttp-js"
+  description  = "JavaScript library implementing the PoHTTP binding"
+  homepage_url = "https://docs.relaycorp.tech/relaynet-pohttp-js/"
+  licence      = "mit"
+  topics       = ["awala", "awala-binding-pohttp"]
+  main_branch  = "master"
+  ci_contexts  = local.lib_js_active_nodejs_ci_contexts
+
+  pages_source_path = "/"
+}
+
+module "awala_lib_cogrpc_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "relaynet-cogrpc-js"
+  description  = "JavaScript library implementing the CogRPC binding"
+  homepage_url = "https://docs.relaycorp.tech/relaynet-cogrpc-js/"
+  licence      = "mit"
+  topics       = ["awala", "awala-binding-cogrpc"]
+  ci_contexts  = ["ci (12)"]
+  main_branch  = "master"
+
+  pages_source_path = "/"
+}
+
+module "awala_lib_poweb_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "relaynet-poweb-js"
+  description  = "JavaScript implementation of the PoWeb binding"
+  homepage_url = "https://docs.relaycorp.tech/relaynet-poweb-js/"
+  licence      = "mit"
+  topics       = ["awala", "awala-binding-poweb"]
+  ci_contexts  = local.lib_nodejs_v12_to_v14_ci_contexts
+  main_branch  = "master"
+
+  pages_source_path = "/"
+}
