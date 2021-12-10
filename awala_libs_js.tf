@@ -1,35 +1,3 @@
-locals {
-  lib_js_ci_contexts = [
-    "ci-nodejs10-ubuntu-latest",
-    "ci-nodejs10-windows-latest",
-    "ci-nodejs10-macos-latest",
-    "ci-nodejs12-ubuntu-latest",
-    "ci-nodejs12-windows-latest",
-    "ci-nodejs12-macos-latest",
-  ]
-
-  lib_nodejs_v12_to_v14_ci_contexts = [
-    "ci-nodejs12-ubuntu-latest",
-    "ci-nodejs12-windows-latest",
-    "ci-nodejs12-macos-latest",
-    "ci-nodejs14-ubuntu-latest",
-    "ci-nodejs14-windows-latest",
-    "ci-nodejs14-macos-latest",
-  ]
-
-  lib_js_active_nodejs_ci_contexts = concat([
-    "ci-nodejs10-ubuntu-latest",
-    "ci-nodejs10-windows-latest",
-    "ci-nodejs10-macos-latest",
-  ], local.lib_nodejs_v12_to_v14_ci_contexts)
-
-  lib_nodejs_v12_to_v16_ci_contexts = concat(local.lib_nodejs_v12_to_v14_ci_contexts, [
-    "ci-nodejs16-ubuntu-latest",
-    "ci-nodejs16-windows-latest",
-    "ci-nodejs16-macos-latest",
-  ])
-}
-
 module "awala_lib_core_js" {
   source  = "relaycorp/oss-project/github"
   version = "1.0.1"
@@ -44,3 +12,89 @@ module "awala_lib_core_js" {
 
   pages_source_path = "/"
 }
+
+module "awala_lib_testing_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "relaynet-testing-js"
+  description  = "Testing utilities for Awala implementations in JavaScript"
+  homepage_url = "https://docs.relaycorp.tech/relaynet-testing-js/"
+  licence      = "mit"
+  topics       = ["awala", "javascript", "nodejs", "testing"]
+  ci_contexts  = local.lib_js_ci_contexts
+
+  pages_source_path = "/"
+}
+
+module "awala_lib_keystore_vault_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "keystore-vault-js"
+  description  = "Vault-based Private Key Store extension for relaynet-core-js"
+  homepage_url = "https://docs.relaycorp.tech/keystore-vault-js/"
+  licence      = "mit"
+  topics       = ["awala", "hashicorp-vault"]
+  main_branch  = "master"
+  ci_contexts  = local.lib_nodejs_v12_to_v16_ci_contexts
+
+  pages_source_path = "/"
+}
+
+module "awala_lib_keystore_db_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "1.0.1"
+
+  name         = "keystore-db-js"
+  description  = "TypeORM-based Private and Public Key Store extension for Awala in JavaScript"
+  homepage_url = "https://docs.relaycorp.tech/keystore-db-js/"
+  licence      = "mit"
+  topics       = ["awala", "typeorm"]
+  ci_contexts  = local.lib_nodejs_v12_to_v16_ci_contexts
+}
+
+#module "awala_lib_pohttp_js" {
+#  source  = "relaycorp/oss-project/github"
+#  version = "1.0.1"
+#
+#  name         = "relaynet-pohttp-js"
+#  description  = "JavaScript library implementing the PoHTTP binding"
+#  homepage_url = "https://docs.relaycorp.tech/relaynet-pohttp-js/"
+#  licence      = "mit"
+#  topics       = ["awala", "awala-binding-pohttp"]
+#  main_branch  = "master"
+#  ci_contexts  = local.lib_js_active_nodejs_ci_contexts
+#
+#  pages_source_path = "/"
+#}
+#
+#module "awala_lib_cogrpc_js" {
+#  source  = "relaycorp/oss-project/github"
+#  version = "1.0.1"
+#
+#  name         = "relaynet-cogrpc-js"
+#  description  = "JavaScript library implementing the CogRPC binding"
+#  homepage_url = "https://docs.relaycorp.tech/relaynet-cogrpc-js/"
+#  licence      = "mit"
+#  topics       = ["awala", "awala-binding-cogrpc"]
+#  ci_contexts  = ["ci (12)"]
+#  main_branch  = "master"
+#
+#  pages_source_path = "/"
+#}
+#
+#module "awala_lib_poweb_js" {
+#  source  = "relaycorp/oss-project/github"
+#  version = "1.0.1"
+#
+#  name         = "relaynet-poweb-js"
+#  description  = "JavaScript implementation of the PoWeb binding"
+#  homepage_url = "https://docs.relaycorp.tech/relaynet-poweb-js/"
+#  licence      = "mit"
+#  topics       = ["awala", "awala-binding-poweb"]
+#  ci_contexts  = local.lib_nodejs_v12_to_v14_ci_contexts
+#  main_branch  = "master"
+#
+#  pages_source_path = "/"
+#}
