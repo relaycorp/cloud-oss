@@ -86,7 +86,7 @@ module "awala_lib_cogrpc_js" {
 
 module "awala_lib_poweb_js" {
   source  = "relaycorp/oss-project/github"
-  version = "1.0.5"
+  version = "1.1.0"
 
   name         = "relaynet-poweb-js"
   description  = "JavaScript implementation of the PoWeb binding"
