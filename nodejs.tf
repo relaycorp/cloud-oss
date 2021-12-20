@@ -30,7 +30,7 @@ locals {
   ])
 
   // TODO: Replace all other matrices with this one
-  nodejs_multiplatform_ci_contexts = [
+  nodejs_lib_ci_contexts = [
     "ci / test-nodejs12-ubuntu-latest",
     "ci / test-nodejs12-macos-latest",
     "ci / test-nodejs12-windows-latest",

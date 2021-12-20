@@ -93,7 +93,7 @@ module "awala_lib_poweb_js" {
   homepage_url = "https://docs.relaycorp.tech/relaynet-poweb-js/"
   licence      = "mit"
   topics       = ["awala", "awala-binding-poweb"]
-  ci_contexts  = local.nodejs_multiplatform_ci_contexts
+  ci_contexts  = local.nodejs_lib_ci_contexts
   main_branch  = "master"
 
   pages_source_path = "/"
