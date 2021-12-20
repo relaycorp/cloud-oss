@@ -1,6 +1,6 @@
 module "tfmod_oss_project" {
   source  = "relaycorp/oss-project/github"
-  version = "1.0.5"
+  version = "2.2.0"
 
   name         = "terraform-github-oss-project"
   description  = "Terraform module for open source projects by Relaycorp"
