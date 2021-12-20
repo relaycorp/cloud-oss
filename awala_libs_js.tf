@@ -86,13 +86,14 @@ module "awala_lib_cogrpc_js" {
 
 module "awala_lib_poweb_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.0.0"
+  version = "2.1.0"
 
   name         = "relaynet-poweb-js"
   description  = "JavaScript implementation of the PoWeb binding"
   homepage_url = "https://docs.relaycorp.tech/relaynet-poweb-js/"
   licence      = "mit"
   topics       = ["awala", "awala-binding-poweb"]
+  ci_contexts  = local.lib_nodejs_v12_to_v16_ci_contexts
   main_branch  = "master"
 
   pages_source_path = "/"
