@@ -10,6 +10,6 @@ module "awala_internet_gateway" {
   ci_contexts  = ["ci"]
   main_branch  = "master"
 
-  pages_source_path = "/docs"
+  pages_source_path   = "/docs"
   pages_source_branch = "master"
 }
