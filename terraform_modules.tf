@@ -6,5 +6,5 @@ module "tfmod_oss_project" {
   description  = "Terraform module for open source projects by Relaycorp"
   homepage_url = "https://registry.terraform.io/modules/relaycorp/oss-project/github/latest"
   licence      = "MIT"
-  ci_contexts  = ["ci-module", "ci-example"]
+  ci_contexts  = ["ci-module / ci", "ci-android-app / ci", "ci-example / ci"]
 }
