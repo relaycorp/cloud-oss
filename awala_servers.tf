@@ -1,6 +1,6 @@
 module "awala_internet_gateway" {
   source  = "relaycorp/oss-project/github"
-  version = "2.2.0"
+  version = "2.4.0"
 
   name         = "relaynet-internet-gateway"
   description  = "The Awala-Internet Gateway"
