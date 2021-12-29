@@ -13,7 +13,7 @@ module "cloud_gateway" {
   topics       = ["awala", "awala-gateway", "cloud"]
 
   ci_contexts = flatten([
-    ["ci", "Terraform Cloud/Relaycorp/cloud-gateway"],
+    ["ci / ci", "Terraform Cloud/Relaycorp/cloud-gateway"],
     [for env in local.cloud_gateway_envs : "Terraform Cloud/Relaycorp/gateway-${env}"],
     [for env in local.cloud_gateway_envs : "gateway-${env}-gke-deployment-preview (relaycorp-cloud-gateway)"],
   ])
