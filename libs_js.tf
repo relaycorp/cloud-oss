@@ -1,6 +1,6 @@
 module "websocket_mock_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.0"
+  version = "2.4.1"
 
   name         = "ws-mock-js"
   description  = "Mock client and server to unit test the NPM package 'ws'"
@@ -12,7 +12,7 @@ module "websocket_mock_js" {
 
 module "object_storage_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.0"
+  version = "2.4.1"
 
   name         = "object-storage-js"
   description  = "Node.js client for object stores like AWS S3, GCP GCS or Minio"
@@ -26,7 +26,7 @@ module "object_storage_js" {
 
 module "pino_cloud_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.0"
+  version = "2.4.1"
 
   name         = "pino-cloud-js"
   description  = "Pino integration for cloud logging services like Google Stackdriver"
@@ -40,7 +40,7 @@ module "pino_cloud_js" {
 
 module "it_duplex_ack_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.0"
+  version = "2.4.1"
 
   name         = "it-duplex-ack-js"
   description  = "Create source/sink iterables for a duplex stream where each message should be acknowledged"
