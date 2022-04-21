@@ -7,7 +7,7 @@ module "awala_internet_gateway" {
   homepage_url = "https://docs.relaycorp.tech/relaynet-internet-gateway/"
   licence      = "agpl"
   topics       = ["awala", "awala-gateway"]
-  ci_contexts  = ["ci"]
+  ci_contexts  = ["ci / ci"]
   main_branch  = "master"
 
   pages_source_path   = "/docs"
@@ -23,7 +23,7 @@ module "awala_pong" {
   homepage_url = "https://docs.relaycorp.tech/relaynet-pong/"
   licence      = "agpl"
   topics       = ["awala", "awala-service-ping"]
-  ci_contexts  = ["ci", "ci/circleci: functional-tests"]
+  ci_contexts  = ["ci / ci", "ci/circleci: functional-tests"]
   main_branch  = "master"
 
   pages_source_path   = "/docs"
