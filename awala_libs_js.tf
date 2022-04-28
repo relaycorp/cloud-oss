@@ -58,11 +58,11 @@ module "awala_lib_keystore_gcp_secretmanager_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.4.1"
 
-  name         = "awala-keystore-gcp-js"
-  description  = "Awala Key Store powered GCP services and JavaScript"
+  name         = "awala-keystore-cloud-js"
+  description  = "Multi-cloud Awala Key Store for server-side Node.js apps"
   homepage_url = ""
   licence      = "mit"
-  topics       = ["awala", "gcp-secret-manager"]
+  topics       = ["awala", "gcp", "mongodb", "hashicorp-vault"]
   ci_contexts  = local.nodejs_lib_ci_contexts
 }
 
