@@ -60,7 +60,7 @@ module "awala_lib_keystore_gcp_secretmanager_js" {
 
   name         = "awala-keystore-cloud-js"
   description  = "Multi-cloud Awala Key Store for server-side Node.js apps"
-  homepage_url = ""
+  homepage_url = "https://docs.relaycorp.tech/awala-keystore-cloud-js/"
   licence      = "mit"
   topics       = ["awala", "gcp", "mongodb", "hashicorp-vault"]
   ci_contexts  = local.nodejs_lib_ci_contexts
