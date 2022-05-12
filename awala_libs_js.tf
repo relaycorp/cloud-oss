@@ -64,6 +64,9 @@ module "awala_lib_keystore_gcp_secretmanager_js" {
   licence      = "mit"
   topics       = ["awala", "gcp", "mongodb", "hashicorp-vault"]
   ci_contexts  = local.nodejs_lib_ci_contexts
+
+  pages_source_path   = "/docs"
+  pages_source_branch = "main"
 }
 
 module "awala_lib_pohttp_js" {
