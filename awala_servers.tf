@@ -1,6 +1,6 @@
 module "awala_internet_gateway" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.1"
+  version = "2.5.0"
 
   name         = "relaynet-internet-gateway"
   description  = "The Awala-Internet Gateway"
@@ -16,7 +16,7 @@ module "awala_internet_gateway" {
 
 module "awala_pong" {
   source  = "relaycorp/oss-project/github"
-  version = "2.4.1"
+  version = "2.5.0"
 
   name         = "relaynet-pong"
   description  = "Awala Ping Service Application (pong messages only)"
