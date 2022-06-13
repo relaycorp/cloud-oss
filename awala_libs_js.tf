@@ -28,18 +28,10 @@ module "awala_lib_testing_js" {
 }
 
 module "awala_lib_keystore_vault_js" {
-  source  = "relaycorp/oss-project/github"
-  version = "2.6.0"
+  source  = "relaycorp/oss-project/github//modules/archived"
+  version = "2.7.0"
 
   name         = "keystore-vault-js"
-  description  = "Vault-based Private Key Store extension for relaynet-core-js"
-  homepage_url = "https://docs.relaycorp.tech/keystore-vault-js/"
-  licence      = "mit"
-  topics       = ["awala", "hashicorp-vault"]
-  main_branch  = "master"
-  ci_contexts  = local.nodejs_lib_ci_contexts
-
-  pages_source_path = "/"
 }
 
 module "awala_lib_keystore_db_js" {
