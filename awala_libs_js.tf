@@ -31,7 +31,7 @@ module "awala_lib_keystore_vault_js" {
   source  = "relaycorp/oss-project/github//modules/archived"
   version = "2.7.0"
 
-  name         = "keystore-vault-js"
+  name = "keystore-vault-js"
 }
 
 module "awala_lib_keystore_db_js" {
