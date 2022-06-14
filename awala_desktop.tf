@@ -7,8 +7,10 @@ module "awala_gateway_desktop" {
   homepage_url = "https://awala.network/users/download"
   licence      = "gplv3"
   topics       = ["awala", "awala-gateway", "windows", "linux", "macos"]
-  ci_contexts  = ["ci-ubuntu-latest", "ci-macos-latest", "ci-windows-latest"]
   main_branch  = "master"
+
+  ci_contexts      = ["pr-ci / semantic-pr-title", "ci-ubuntu-latest", "ci-macos-latest", "ci-windows-latest"]
+  support_releases = false
 }
 
 module "awala_ping_desktop" {
