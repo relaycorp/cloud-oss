@@ -1,5 +1,7 @@
 locals {
-  cloud_gateway_envs = ["frankfurt"]
+  cloud_gateways = {
+    frankfurt: "gw-frankfurt-4065"
+  }
 }
 
 module "cloud_gateway" {
@@ -14,8 +16,8 @@ module "cloud_gateway" {
 
   ci_contexts = flatten([
     ["ci / ci", "Terraform Cloud/Relaycorp/cloud-gateway"],
-    [for env in local.cloud_gateway_envs : "Terraform Cloud/Relaycorp/gateway-${env}"],
-    [for env in local.cloud_gateway_envs : "gateway-${env}-gke-deployment-preview (relaycorp-cloud-gateway)"],
+    [for k, v in local.cloud_gateways : "Terraform Cloud/Relaycorp/gateway-${k}"],
+    [for k, v in local.cloud_gateways : "gateway-gke-deployment-preview (${v})"],
   ])
   support_releases = false
 }
