@@ -1,6 +1,6 @@
 locals {
   cloud_gateways = {
-    frankfurt: "gw-frankfurt-4065"
+    frankfurt : "gw-frankfurt-4065"
   }
 }
 
