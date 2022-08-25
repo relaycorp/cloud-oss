@@ -56,7 +56,7 @@ module "dnssec_js" {
 
   name         = "dnssec-verifier-js"
   description  = "Resolver-agnostic DNSSEC chain verification library for Node.js"
-  homepage_url = "https://docs.relaycorp.tech/dnssec-js/"
+  homepage_url = ""
   licence      = "mit"
   topics       = ["dnssec"]
   ci_contexts  = local.nodejs_lib_ci_contexts
