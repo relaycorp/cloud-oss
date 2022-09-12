@@ -54,8 +54,8 @@ module "dnssec_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
 
-  name         = "dnssec-verifier-js"
-  description  = "Resolver-agnostic DNSSEC chain verification library for Node.js"
+  name         = "dnssec-js"
+  description  = "Resolver-agnostic DNSSEC library for Node.js"
   homepage_url = ""
   licence      = "mit"
   topics       = ["dnssec"]
