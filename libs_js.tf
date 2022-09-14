@@ -1,3 +1,14 @@
+module "dnssec_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.6.0"
+
+  name         = "eslint-config"
+  description  = "ESLint configuration for all Relaycorp JS projects"
+  homepage_url = ""
+  licence      = "mit"
+  topics       = ["eslint"]
+}
+
 module "websocket_mock_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
