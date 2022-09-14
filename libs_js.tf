@@ -1,10 +1,10 @@
-module "dnssec_js" {
+module "eslint_config_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
 
   name         = "eslint-config"
   description  = "ESLint configuration for all Relaycorp JS projects"
-  homepage_url = ""
+  homepage_url = "https://www.npmjs.com/package/@relaycorp/eslint-config"
   licence      = "mit"
   topics       = ["eslint"]
 }
