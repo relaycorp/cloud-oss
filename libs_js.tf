@@ -70,5 +70,5 @@ module "dnssec_js" {
   homepage_url = ""
   licence      = "mit"
   topics       = ["dnssec"]
-  ci_contexts  = local.nodejs_lib_ci_contexts
+  ci_contexts  = local.nodejs_lib_min_v16_ci_contexts
 }
