@@ -67,7 +67,7 @@ module "dnssec_js" {
 
   name         = "dnssec-js"
   description  = "Resolver-agnostic DNSSEC library for Node.js"
-  homepage_url = ""
+  homepage_url = "https://www.npmjs.com/package/@relaycorp/dnssec"
   licence      = "mit"
   topics       = ["dnssec"]
   ci_contexts  = local.nodejs_lib_min_v16_ci_contexts
