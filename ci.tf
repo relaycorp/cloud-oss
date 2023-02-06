@@ -14,11 +14,11 @@ locals {
   ], local.nodejs_lib_min_v16_ci_contexts)
 
   lib_jvm_ci_contexts = [
-    "java8-ubuntu-latest",
-    "java11-ubuntu-latest",
-    "java8-macos-latest",
-    "java11-macos-latest",
-    "java8-windows-latest",
-    "java11-windows-latest"
+    "ci / java8-ubuntu-latest",
+    "ci / java11-ubuntu-latest",
+    "ci / java8-macos-latest",
+    "ci / java11-macos-latest",
+    "ci / java8-windows-latest",
+    "ci / java11-windows-latest"
   ]
 }
