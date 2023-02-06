@@ -12,4 +12,13 @@ locals {
     "ci / test-nodejs14-macos-latest",
     "ci / test-nodejs14-windows-latest",
   ], local.nodejs_lib_min_v16_ci_contexts)
+
+  lib_jvm_ci_contexts = [
+    "java8-ubuntu-latest",
+    "java11-ubuntu-latest",
+    "java8-macos-latest",
+    "java11-macos-latest",
+    "java8-windows-latest",
+    "java11-windows-latest"
+  ]
 }
