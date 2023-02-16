@@ -7,6 +7,4 @@ module "veraid_ca_server" {
   licence     = "agpl"
   topics      = local.vera_topics
   ci_contexts = ["ci / ci"]
-
-  pages_source_path = "/"
 }
