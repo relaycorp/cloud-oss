@@ -7,4 +7,7 @@ module "veraid_ca_server" {
   licence     = "agpl"
   topics      = local.vera_topics
   ci_contexts = ["ci / ci"]
+
+  // TODO: Undo once https://github.com/relaycorp/veraid-authority/issues/22 is fixed
+  support_releases = false
 }
