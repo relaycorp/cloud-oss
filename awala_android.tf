@@ -24,3 +24,21 @@ module "awala_courier_ci" {
 
   firebase_test_lab_viewers = local.bloco_iam_members
 }
+
+module "awala_lib_endpoint_android" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.8.0"
+
+  name         = "awala-endpoint-android"
+  description  = "High-level library for Android apps implementing Awala endpoints"
+  homepage_url = ""
+  licence      = "apache2"
+  topics = [
+    "awala",
+    "kotlin",
+    "android"
+  ]
+  ci_contexts = local.lib_jvm_ci_contexts
+
+  pages_source_path = "/"
+}
