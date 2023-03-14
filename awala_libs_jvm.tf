@@ -11,7 +11,7 @@ module "awala_lib_core_jvm" {
     "java",
     "jvm",
     "kotlin",
-    "android"]
+  "android"]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
 
