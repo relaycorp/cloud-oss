@@ -4,7 +4,7 @@ module "doh_jvm" {
 
   name         = "doh-jvm"
   description  = "Basic DNS-over-HTTPS library for the JVM"
-  homepage_url = "https://search.maven.org/artifact/tech.relaycorp/doh"
+  homepage_url = "https://central.sonatype.com/artifact/tech.relaycorp/doh"
   licence      = "apache2"
   topics = [
     "doh",
