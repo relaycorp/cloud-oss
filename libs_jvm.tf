@@ -4,7 +4,7 @@ module "doh_jvm" {
 
   name         = "doh-jvm"
   description  = "Basic DNS-over-HTTPS library for the JVM"
-  homepage_url = "https://docs.relaycorp.tech/veraid-jvm/"
+  homepage_url = "https://central.sonatype.com/search?q=doh&namespace=tech.relaycorp"
   licence      = "apache2"
   topics = [
     "doh",
