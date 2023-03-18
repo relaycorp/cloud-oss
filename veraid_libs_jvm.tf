@@ -6,6 +6,6 @@ module "veraid_jvm" {
   description  = "VeraId library for the JVM"
   homepage_url = "https://search.maven.org/artifact/tech.relaycorp/veraid"
   licence      = "apache2"
-  topics       = local.vera_topics
+  topics       = local.veraid_topics
   ci_contexts  = local.lib_jvm_ci_contexts
 }

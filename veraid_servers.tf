@@ -5,6 +5,6 @@ module "veraid_ca_server" {
   name        = "veraid-authority"
   description = "VeraId Certificate Authority (CA) server"
   licence     = "agpl"
-  topics      = local.vera_topics
+  topics      = local.veraid_topics
   ci_contexts = ["ci / ci"]
 }

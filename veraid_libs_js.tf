@@ -6,7 +6,7 @@ module "veraid_js" {
   description  = "VeraId library for Node.js"
   homepage_url = "https://www.npmjs.com/package/@relaycorp/veraid"
   licence      = "mit"
-  topics       = local.vera_topics
+  topics       = local.veraid_topics
   ci_contexts  = local.nodejs_lib_min_v16_ci_contexts
 
   pages_source_path = "/"
