@@ -8,4 +8,6 @@ module "veraid_jvm" {
   licence      = "apache2"
   topics       = local.veraid_topics
   ci_contexts  = local.lib_jvm_ci_contexts
+
+  pages_source_path = "/"
 }
