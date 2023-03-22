@@ -39,8 +39,8 @@ module "kms_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
 
-  name        = "kms-js"
-  description = "Node.js client that abstracts Key Management Services like GCP KMS"
+  name        = "webcrypto-kms-js"
+  description = "WebCrypto providers for Key Management Services like GCP KMS"
   licence     = "mit"
   topics      = ["kms", "key-management-system", "gcp-kms", "vault"]
   ci_contexts = local.nodejs_lib_min_v16_ci_contexts
