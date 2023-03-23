@@ -1,3 +1,14 @@
+module "shared_config_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.6.0"
+
+  name         = "shared-config"
+  description  = "Shared development and CI configuration across projects"
+  homepage_url = "https://www.npmjs.com/package/@relaycorp/shared-config"
+  licence      = "mit"
+  main_branch  = "master"
+}
+
 module "eslint_config_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
