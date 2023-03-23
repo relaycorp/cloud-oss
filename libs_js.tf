@@ -40,7 +40,7 @@ module "kms_js" {
   version = "2.6.0"
 
   name        = "webcrypto-kms-js"
-  description = "WebCrypto providers for Key Management Services like GCP KMS"
+  description = "WebCrypto-compatible client for Key Management Services like GCP KMS"
   licence     = "mit"
   topics      = ["kms", "key-management-system", "gcp-kms", "vault"]
   ci_contexts = local.nodejs_lib_min_v16_ci_contexts
