@@ -13,12 +13,14 @@ locals {
     "ci / test-nodejs14-windows-latest",
   ], local.nodejs_lib_min_v16_ci_contexts)
 
-  lib_jvm_ci_contexts = [
+  jvm_java11_ci_contexts = [
     "ci / java11-ubuntu-latest",
-    "ci / java17-ubuntu-latest",
     "ci / java11-macos-latest",
-    "ci / java17-macos-latest",
     "ci / java11-windows-latest",
-    "ci / java17-windows-latest",
   ]
+  lib_jvm_ci_contexts = concat(local.jvm_java11_ci_contexts, [
+    "ci / java17-ubuntu-latest",
+    "ci / java17-macos-latest",
+    "ci / java17-windows-latest",
+  ])
 }
