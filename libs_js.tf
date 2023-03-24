@@ -55,6 +55,8 @@ module "kms_js" {
   licence     = "mit"
   topics      = ["kms", "key-management-system", "gcp-kms", "vault"]
   ci_contexts = local.nodejs_lib_min_v16_ci_contexts
+
+  pages_source_path = "/"
 }
 
 module "pino_cloud_js" {
