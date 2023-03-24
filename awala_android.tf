@@ -38,7 +38,11 @@ module "awala_lib_endpoint_android" {
     "kotlin",
     "android"
   ]
-  ci_contexts = local.lib_jvm_ci_contexts
+  ci_contexts = [
+    "ci / ci-ubuntu-latest",
+    "ci / ci-macos-latest",
+    "ci / ci-windows-latest",
+  ]
 
   pages_source_path = "/"
 }
