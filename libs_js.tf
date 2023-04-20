@@ -30,6 +30,8 @@ module "websocket_mock_js" {
   licence      = "mit"
   topics       = ["websocket"]
   ci_contexts  = local.nodejs_lib_ci_contexts
+
+  pages_source_path = "/"
 }
 
 module "object_storage_js" {
