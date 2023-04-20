@@ -40,3 +40,14 @@ module "veraid_ca_server" {
   topics      = local.veraid_topics
   ci_contexts = ["ci / ci"]
 }
+
+module "veraid_authority_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.6.0"
+
+  name         = "veraid-authority-js"
+  description  = "JS client library for the VeraId Authority API"
+  homepage_url = "https://www.npmjs.com/package/@relaycorp/veraid-authority"
+  licence      = "mit"
+  topics       = local.veraid_topics
+}
