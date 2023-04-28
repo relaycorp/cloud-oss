@@ -34,11 +34,12 @@ module "veraid_ca_server" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
 
-  name        = "veraid-authority"
-  description = "VeraId Certificate Authority (CA) server"
-  licence     = "agpl"
-  topics      = local.veraid_topics
-  ci_contexts = ["ci / ci"]
+  name         = "veraid-authority"
+  description  = "Cloud-native app that allows organisations to manage their VeraId members and the issuance of their respective bundles."
+  homepage_url = "https://docs.relaycorp.tech/veraid-authority/"
+  licence      = "agpl"
+  topics       = local.veraid_topics
+  ci_contexts  = ["ci / ci"]
 }
 
 module "veraid_authority_js" {
