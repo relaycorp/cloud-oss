@@ -41,7 +41,8 @@ module "veraid_ca_server" {
   topics       = local.veraid_topics
   ci_contexts  = ["ci / ci"]
 
-  pages_source_path = "/docs"
+  pages_source_path   = "/docs"
+  pages_source_branch = "main"
 }
 
 module "veraid_authority_js" {
