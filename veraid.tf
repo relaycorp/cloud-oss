@@ -51,4 +51,6 @@ module "veraid_authority_js" {
   licence      = "mit"
   topics       = local.veraid_topics
   ci_contexts  = local.nodejs_lib_min_v18_ci_contexts
+
+  pages_source_path = "/"
 }
