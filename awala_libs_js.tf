@@ -46,6 +46,18 @@ module "awala_lib_keystore_db_js" {
   ci_contexts  = local.nodejs_lib_ci_contexts
 }
 
+module "awala_lib_keystore_mongodb_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.6.0"
+
+  name         = "awala-keystore-mongodb-js"
+  description  = "MongoDB-based Certificate and Public Key Store for Awala in JavaScript"
+  homepage_url = "https://docs.relaycorp.tech/awala-keystore-mongodb-js/"
+  licence      = "mit"
+  topics       = ["awala", "mongodb"]
+  ci_contexts  = local.nodejs_lib_ci_contexts
+}
+
 module "awala_lib_keystore_gcp_secretmanager_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.6.0"
