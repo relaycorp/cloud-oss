@@ -56,7 +56,7 @@ module "kms_js" {
   description = "WebCrypto-compatible client for Key Management Services like GCP KMS"
   licence     = "mit"
   topics      = ["kms", "key-management-system", "gcp-kms", "vault"]
-  ci_contexts = local.nodejs_lib_min_v16_ci_contexts
+  ci_contexts = local.nodejs_lib_min_v18_ci_contexts
 
   pages_source_path = "/"
 }
@@ -96,7 +96,7 @@ module "dnssec_js" {
   homepage_url = "https://www.npmjs.com/package/@relaycorp/dnssec"
   licence      = "mit"
   topics       = ["dnssec"]
-  ci_contexts  = local.nodejs_lib_min_v16_ci_contexts
+  ci_contexts  = local.nodejs_lib_min_v18_ci_contexts
 
   pages_source_path = "/"
 }
