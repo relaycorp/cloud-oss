@@ -40,4 +40,6 @@ module "awala_endpoint_internet" {
   licence      = "agpl"
   topics       = ["awala", "awala-endpoint"]
   ci_contexts  = ["ci / ci"]
+
+  pages_source_path   = "/docs"
 }
