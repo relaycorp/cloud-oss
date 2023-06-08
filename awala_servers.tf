@@ -41,5 +41,6 @@ module "awala_endpoint_internet" {
   topics       = ["awala", "awala-endpoint"]
   ci_contexts  = ["ci / ci"]
 
-  pages_source_path = "/docs"
+  pages_source_path   = "/docs"
+  pages_source_branch = "main"
 }
