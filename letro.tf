@@ -1,4 +1,4 @@
-module "awala_courier_android" {
+module "letro_android" {
   source  = "relaycorp/oss-project/github"
   version = "2.8.0"
 
