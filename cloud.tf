@@ -6,7 +6,7 @@ locals {
 
 module "cloud_gateway" {
   source  = "relaycorp/oss-project/github"
-  version = "2.6.0"
+  version = "2.9.0"
 
   name         = "cloud-gateway"
   description  = "Infrastructure as Code and configuration for all Awala-Internet Gateways run by Relaycorp"
