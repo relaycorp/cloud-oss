@@ -4,18 +4,19 @@ locals {
 
 module "letro_android" {
   source  = "relaycorp/oss-project/github"
-  version = "2.8.0"
+  version = "2.9.0"
 
-  name        = "letro-android"
-  description = "Letro for Android"
-  licence     = "gplv3"
-  topics      = ["letro", "android"]
-  ci_contexts = ["Run static checks and tests"]
+  name           = "letro-android"
+  description    = "Letro for Android"
+  licence        = "gplv3"
+  topics         = ["letro", "android"]
+  ci_contexts    = ["Run static checks and tests"]
+  support_issues = false
 }
 
 module "letro_android_ci" {
   source  = "relaycorp/oss-project/github//modules/android-app-ci"
-  version = "2.8.0"
+  version = "2.9.0"
 
   gcp_project_name = "letro-android"
   gh_repo_name     = module.letro_android.name
