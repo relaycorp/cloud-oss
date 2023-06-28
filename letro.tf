@@ -23,3 +23,17 @@ module "letro_android_ci" {
 
   firebase_test_lab_viewers = local.letro_external_devs
 }
+
+module "letro_cloud" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.9.0"
+
+  name         = "letro-cloud"
+  description  = "Infrastructure as Code and configuration for Letro's centralised components"
+  homepage_url = ""
+  licence      = "agpl"
+  topics       = ["letro"]
+
+  support_releases = false
+  support_issues   = false
+}
