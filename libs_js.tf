@@ -106,7 +106,7 @@ module "cloudevents_transport_js" {
   version = "2.9.0"
 
   name        = "cloudevents-transport-js"
-  description = "Node.js lbrary to send/receive CloudEvents over HTTP binary or any cloud-specific service like GCP PubSub"
+  description = "Node.js library to send/receive CloudEvents over HTTP binary or any cloud-specific service like GCP PubSub"
   licence     = "mit"
   topics      = ["cloudevents"]
   ci_contexts = local.nodejs_lib_ci_contexts
