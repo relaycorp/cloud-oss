@@ -28,11 +28,24 @@ module "letro_cloud" {
   source  = "relaycorp/oss-project/github"
   version = "2.9.0"
 
-  name         = "letro-cloud"
-  description  = "Infrastructure as Code and configuration for Letro's centralised components"
-  homepage_url = ""
-  licence      = "agpl"
-  topics       = ["letro"]
+  name        = "letro-cloud"
+  description = "Infrastructure as Code and configuration for Letro's centralised components"
+  licence     = "agpl"
+  topics      = ["letro"]
+
+  support_releases = false
+  support_issues   = false
+}
+
+module "letro_server" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.9.0"
+
+  name        = "letro-server"
+  description = "Awala endpoint backend backing Letro's centralised service"
+  licence     = "agpl"
+  topics      = ["letro"]
+  ci_contexts = ["ci / ci"]
 
   support_releases = false
   support_issues   = false
