@@ -49,4 +49,7 @@ module "letro_server" {
 
   support_releases = false
   support_issues   = false
+
+  pages_source_path   = "/docs"
+  pages_source_branch = "main"
 }
