@@ -52,4 +52,5 @@ module "letro_server" {
 
   pages_source_path   = "/docs"
   pages_source_branch = "main"
+  homepage_url        = "https://docs.relaycorp.tech/letro-server/"
 }
