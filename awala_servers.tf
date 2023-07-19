@@ -44,3 +44,14 @@ module "awala_endpoint_internet" {
   pages_source_path   = "/docs"
   pages_source_branch = "main"
 }
+
+module "awala_endpoint_internet_tf_gcp" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.9.0"
+
+  name        = "terraform-google-awala-endpoint"
+  description = "Terraform module to manage an instance of the Awala Internet Endpoint on GCP."
+  licence     = "agpl"
+  topics      = ["awala", "awala-endpoint", "terraform", "gcp"]
+  ci_contexts = ["ci / ci"]
+}
