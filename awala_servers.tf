@@ -53,5 +53,5 @@ module "awala_endpoint_internet_tf_gcp" {
   description = "Terraform module to manage an instance of the Awala Internet Endpoint on GCP."
   licence     = "agpl"
   topics      = ["awala", "awala-endpoint", "terraform", "gcp"]
-  ci_contexts = ["ci / ci"]
+  ci_contexts = ["ci-module / ci", "ci-example / ci"]
 }
