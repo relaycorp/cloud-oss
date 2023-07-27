@@ -18,9 +18,9 @@ module "awala_pong" {
   source  = "relaycorp/oss-project/github"
   version = "2.9.0"
 
-  name         = "relaynet-pong"
+  name         = "awala-pong"
   description  = "Awala Ping Service Application (pong messages only)"
-  homepage_url = "https://docs.relaycorp.tech/relaynet-pong/"
+  homepage_url = "https://docs.relaycorp.tech/awala-pong/"
   licence      = "agpl"
   topics       = ["awala", "awala-service-ping"]
   ci_contexts  = ["ci / ci"]
