@@ -18,16 +18,12 @@ module "awala_pong" {
   source  = "relaycorp/oss-project/github"
   version = "2.9.0"
 
-  name         = "relaynet-pong"
-  description  = "Awala Ping Service Application (pong messages only)"
-  homepage_url = "https://docs.relaycorp.tech/relaynet-pong/"
-  licence      = "agpl"
-  topics       = ["awala", "awala-service-ping"]
-  ci_contexts  = ["ci / ci"]
-  main_branch  = "master"
-
-  pages_source_path   = "/docs"
-  pages_source_branch = "master"
+  name        = "awala-pong"
+  description = "Awala Ping Service Application (pong messages only)"
+  licence     = "agpl"
+  topics      = ["awala", "awala-service-ping"]
+  ci_contexts = ["ci / ci"]
+  main_branch = "master"
 }
 
 module "awala_endpoint_internet" {
