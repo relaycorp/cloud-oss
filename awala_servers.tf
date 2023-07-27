@@ -41,6 +41,17 @@ module "awala_endpoint_internet" {
   pages_source_branch = "main"
 }
 
+module "awala_endpoint_internet_js" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.9.0"
+
+  name        = "awala-endpoint-internet-js"
+  description = "JS library to make it easier for a server-side app to exchange messages with the Awala Internet Endpoint."
+  licence     = "mit"
+  topics      = ["awala", "awala-endpoint"]
+  ci_contexts = local.nodejs_lib_ci_contexts
+}
+
 module "awala_endpoint_internet_tf_gcp" {
   source  = "relaycorp/oss-project/github"
   version = "2.9.0"
