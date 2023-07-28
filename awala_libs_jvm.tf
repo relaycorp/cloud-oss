@@ -1,6 +1,6 @@
 module "awala_lib_core_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-jvm"
   description  = "JVM library for the core of Awala"
@@ -20,7 +20,7 @@ module "awala_lib_core_jvm" {
 
 module "awala_lib_testing_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-testing-jvm"
   description  = "Testing utilities for Awala implementations on the JVM"
@@ -41,7 +41,7 @@ module "awala_lib_testing_jvm" {
 
 module "awala_lib_cogrpc_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-cogrpc-jvm"
   description  = "JVM implementation of the Awala CogRPC binding"
@@ -62,7 +62,7 @@ module "awala_lib_cogrpc_jvm" {
 
 module "awala_lib_cogrpc_okhttp_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-cogrpc-okhttp-jvm"
   description  = "gRPC OkHTTP channel provider for Awala's CogRPC JVM implementation"
@@ -83,7 +83,7 @@ module "awala_lib_cogrpc_okhttp_jvm" {
 
 module "awala_lib_poweb_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-poweb-jvm"
   description  = "JVM implementation of the Awala PoWeb binding"
@@ -104,7 +104,7 @@ module "awala_lib_poweb_jvm" {
 
 module "awala_lib_keystore_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "awala-keystore-file-jvm"
   description  = "JVM implementation of file-based Private and Public Key Stores for Awala"
