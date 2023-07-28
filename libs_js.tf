@@ -1,6 +1,6 @@
 module "shared_config_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "shared-config"
   description  = "Shared development and CI configuration across projects"
@@ -11,7 +11,7 @@ module "shared_config_js" {
 
 module "eslint_config_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "eslint-config"
   description  = "ESLint configuration for all Relaycorp JS projects"
@@ -22,7 +22,7 @@ module "eslint_config_js" {
 
 module "websocket_mock_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "ws-mock-js"
   description  = "Mock client and server to unit test the NPM package 'ws'"
@@ -36,7 +36,7 @@ module "websocket_mock_js" {
 
 module "object_storage_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "object-storage-js"
   description  = "Node.js client for object stores like AWS S3, GCP GCS or Minio"
@@ -50,7 +50,7 @@ module "object_storage_js" {
 
 module "kms_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name        = "webcrypto-kms-js"
   description = "WebCrypto-compatible client for Key Management Services like GCP KMS"
@@ -63,7 +63,7 @@ module "kms_js" {
 
 module "pino_cloud_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "pino-cloud-js"
   description  = "Pino integration for cloud logging services like Google Stackdriver"
@@ -79,7 +79,7 @@ module "pino_cloud_js" {
 
 module "it_duplex_ack_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "it-duplex-ack-js"
   description  = "Create source/sink iterables for a duplex stream where each message should be acknowledged"
@@ -91,7 +91,7 @@ module "it_duplex_ack_js" {
 
 module "dnssec_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name         = "dnssec-js"
   description  = "Resolver-agnostic DNSSEC library for Node.js"
@@ -107,7 +107,7 @@ module "dnssec_js" {
 
 module "cloudevents_transport_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.12.0"
+  version = "2.13.0"
 
   name        = "cloudevents-transport-js"
   description = "Node.js library to send/receive CloudEvents over HTTP binary or any cloud-specific service like GCP PubSub"
