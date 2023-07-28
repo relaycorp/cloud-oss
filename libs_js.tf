@@ -8,7 +8,7 @@ module "shared_config_js" {
   licence      = "mit"
   main_branch  = "main"
 
-  ci_contexts  = local.nodejs_lib_ci_contexts
+  ci_contexts = local.nodejs_lib_ci_contexts
 }
 
 module "eslint_config_js" {
