@@ -11,7 +11,7 @@ module "shared_config_js" {
 
 module "eslint_config_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.10.0"
+  version = "2.9.0"
 
   name         = "eslint-config"
   description  = "ESLint configuration for all Relaycorp JS projects"
