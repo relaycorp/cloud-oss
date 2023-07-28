@@ -6,7 +6,7 @@ module "shared_config_js" {
   description  = "Shared development and CI configuration across projects"
   homepage_url = "https://www.npmjs.com/package/@relaycorp/shared-config"
   licence      = "mit"
-  main_branch  = "master"
+  main_branch  = "main"
 }
 
 module "eslint_config_js" {
