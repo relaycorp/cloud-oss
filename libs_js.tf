@@ -72,6 +72,8 @@ module "pino_cloud_js" {
   topics       = ["pino", "stackdriver"]
   ci_contexts  = local.nodejs_lib_ci_contexts
 
+  support_discussions = true
+
   pages_source_path = "/"
 }
 
