@@ -1,6 +1,6 @@
 module "awala_internet_gateway" {
   source  = "relaycorp/oss-project/github"
-  version = "2.11.0"
+  version = "2.12.0"
 
   name         = "relaynet-internet-gateway"
   description  = "The Awala-Internet Gateway"
@@ -16,7 +16,7 @@ module "awala_internet_gateway" {
 
 module "awala_pong" {
   source  = "relaycorp/oss-project/github"
-  version = "2.11.0"
+  version = "2.12.0"
 
   name        = "awala-pong"
   description = "Awala Ping Service Application (pong messages only)"
@@ -28,7 +28,7 @@ module "awala_pong" {
 
 module "awala_endpoint_internet" {
   source  = "relaycorp/oss-project/github"
-  version = "2.11.0"
+  version = "2.12.0"
 
   name         = "awala-endpoint-internet"
   description  = "Middleware for server-side apps to communicate over Awala without implementing any of the networking or cryptography from the protocol suite."
@@ -43,7 +43,7 @@ module "awala_endpoint_internet" {
 
 module "awala_endpoint_internet_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.11.0"
+  version = "2.12.0"
 
   name        = "awala-endpoint-internet-js"
   description = "JS library to make it easier for a server-side app to exchange messages with the Awala Internet Endpoint."
@@ -54,7 +54,7 @@ module "awala_endpoint_internet_js" {
 
 module "awala_endpoint_internet_tf_gcp" {
   source  = "relaycorp/oss-project/github"
-  version = "2.11.0"
+  version = "2.12.0"
 
   name         = "terraform-google-awala-endpoint"
   description  = "Terraform module to manage an instance of the Awala Internet Endpoint on GCP."
