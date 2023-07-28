@@ -1,6 +1,6 @@
 module "doh_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.9.0"
+  version = "2.12.0"
 
   name         = "doh-jvm"
   description  = "Basic DNS-over-HTTPS library for the JVM"
@@ -15,6 +15,8 @@ module "doh_jvm" {
     "android",
   ]
   ci_contexts = local.lib_jvm_ci_contexts
+
+  support_discussions = true
 
   pages_source_path = "/"
 }
