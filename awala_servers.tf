@@ -53,6 +53,7 @@ module "awala_endpoint_internet_js" {
   ci_contexts  = local.nodejs_lib_ci_contexts
 
   pages_source_branch = "gh-pages"
+  pages_source_path   = "/"
 }
 
 module "awala_endpoint_internet_tf_gcp" {
