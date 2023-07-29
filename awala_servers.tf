@@ -45,11 +45,12 @@ module "awala_endpoint_internet_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.13.0"
 
-  name        = "awala-endpoint-internet-js"
-  description = "High-level JS library to process Awala Internet Endpoint-compatible CloudEvents"
-  licence     = "mit"
-  topics      = ["awala", "awala-endpoint"]
-  ci_contexts = local.nodejs_lib_ci_contexts
+  name         = "awala-endpoint-internet-js"
+  description  = "High-level JS library to process Awala Internet Endpoint-compatible CloudEvents"
+  homepage_url = "https://www.npmjs.com/package/@relaycorp/awala-endpoint-internet"
+  licence      = "mit"
+  topics       = ["awala", "awala-endpoint"]
+  ci_contexts  = local.nodejs_lib_ci_contexts
 }
 
 module "awala_endpoint_internet_tf_gcp" {
