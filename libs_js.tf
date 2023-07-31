@@ -58,7 +58,7 @@ module "kms_js" {
   description = "WebCrypto-compatible client for Key Management Services like GCP KMS"
   licence     = "mit"
   topics      = ["kms", "key-management-system", "gcp-kms", "vault"]
-  ci_contexts = local.nodejs_lib_min_v18_ci_contexts
+  ci_contexts = local.nodejs_lib_ci_contexts
 
   pages_source_path = "/"
 }
