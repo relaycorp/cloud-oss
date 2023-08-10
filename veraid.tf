@@ -45,6 +45,18 @@ module "veraid_ca_server" {
   pages_source_branch = "main"
 }
 
+module "veraid_authority_tf_gcp" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.13.0"
+
+  name         = "terraform-google-veraid-authority"
+  description  = "Terraform module to manage an instance of VeraId Authority on GCP."
+  homepage_url = "https://registry.terraform.io/modules/relaycorp/veraid-authority/google"
+  licence      = "agpl"
+  topics       = ["veraid", "terraform", "gcp"]
+  ci_contexts  = ["ci-module / ci"]
+}
+
 module "veraid_authority_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.13.0"
