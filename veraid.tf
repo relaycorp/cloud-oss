@@ -54,7 +54,7 @@ module "veraid_authority_tf_gcp" {
   homepage_url = "https://registry.terraform.io/modules/relaycorp/veraid-authority/google"
   licence      = "agpl"
   topics       = ["veraid", "terraform", "gcp"]
-  ci_contexts  = ["ci-module / ci"]
+  ci_contexts  = ["ci-module / ci", "ci-module-awala / ci", "ci-example / ci", "ci-example-awala / ci"]
 }
 
 module "veraid_authority_js" {
