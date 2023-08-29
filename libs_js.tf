@@ -100,7 +100,7 @@ module "dnssec_js" {
   homepage_url = "https://www.npmjs.com/package/@relaycorp/dnssec"
   licence      = "mit"
   topics       = ["dnssec"]
-  ci_contexts  = local.nodejs_lib_min_v18_ci_contexts
+  ci_contexts  = local.nodejs_lib_ci_contexts
 
   support_discussions = true
 

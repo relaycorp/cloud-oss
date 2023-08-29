@@ -1,11 +1,8 @@
 locals {
   nodejs_lib_min_v20_ci_contexts = ["ci / nodejs20"]
-  nodejs_lib_min_v18_ci_contexts = concat([
+  nodejs_lib_ci_contexts = concat([
     "ci / nodejs18",
   ], local.nodejs_lib_min_v20_ci_contexts)
-  nodejs_lib_ci_contexts = concat([
-    "ci / nodejs16",
-  ], local.nodejs_lib_min_v18_ci_contexts)
 
   jvm_java11_ci_contexts = [
     "ci / java11-ubuntu-latest",

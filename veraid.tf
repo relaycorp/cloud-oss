@@ -11,7 +11,7 @@ module "veraid_js" {
   homepage_url = "https://www.npmjs.com/package/@relaycorp/veraid"
   licence      = "mit"
   topics       = local.veraid_topics
-  ci_contexts  = local.nodejs_lib_min_v18_ci_contexts
+  ci_contexts  = local.nodejs_lib_ci_contexts
 
   pages_source_path = "/"
 }
