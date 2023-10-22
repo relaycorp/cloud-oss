@@ -2,9 +2,9 @@ module "awala_internet_gateway" {
   source  = "relaycorp/oss-project/github"
   version = "2.13.0"
 
-  name         = "relaynet-internet-gateway"
+  name         = "awala-internet-gateway"
   description  = "The Awala-Internet Gateway"
-  homepage_url = "https://docs.relaycorp.tech/relaynet-internet-gateway/"
+  homepage_url = "https://docs.relaycorp.tech/awala-internet-gateway/"
   licence      = "agpl"
   topics       = ["awala", "awala-gateway"]
   ci_contexts  = ["ci / ci"]
