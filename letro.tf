@@ -54,3 +54,19 @@ module "letro_server" {
   pages_source_branch = "main"
   homepage_url        = "https://docs.relaycorp.tech/letro-server/"
 }
+
+module "letro_lib_jvm" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.13.0"
+
+  name         = "letro-jvm"
+  description  = "Letro core library for the JVM"
+  homepage_url = ""
+  licence      = "apache2"
+  topics = [
+    "letro",
+    "jvm",
+    "kotlin"
+  ]
+  ci_contexts = local.lib_jvm_ci_contexts
+}
