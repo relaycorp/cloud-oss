@@ -5,5 +5,5 @@ variable "bloco_team_members" {
 
 variable "letro_external_devs" {
   type        = list(string)
-  description = "Email addresses of external developers working on Awala"
+  description = "Email addresses of external developers working on Letro"
 }
