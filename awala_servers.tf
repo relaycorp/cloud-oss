@@ -14,6 +14,18 @@ module "awala_internet_gateway" {
   pages_source_branch = "master"
 }
 
+module "awala_gateway_internet_tf_gcp" {
+  source  = "relaycorp/oss-project/github"
+  version = "2.13.0"
+
+  name         = "terraform-google-awala-gateway"
+  description  = "Terraform module to manage an instance of the Awala Internet Gateway on GCP."
+  homepage_url = "https://registry.terraform.io/modules/relaycorp/awala-gateway/google"
+  licence      = "agpl"
+  topics       = ["awala", "awala-gateway", "terraform", "gcp"]
+  ci_contexts  = ["ci-module / ci", "ci-example / ci"]
+}
+
 module "awala_pong" {
   source  = "relaycorp/oss-project/github"
   version = "2.13.0"
