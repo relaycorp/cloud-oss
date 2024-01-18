@@ -14,7 +14,7 @@ module "cloud_gateway" {
 
   ci_contexts = flatten([
     ["ci-main / ci", "Terraform Cloud/Relaycorp/cloud-gateway"],
-    [for name in local.cloud_gateways : "ci-${name} /ci"],
+    [for name in local.cloud_gateways : "ci-${name} / ci"],
     [for name in local.cloud_gateways : "Terraform Cloud/Relaycorp/gateway-${name}"],
   ])
   support_releases = false
