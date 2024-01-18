@@ -13,7 +13,8 @@ module "cloud_gateway" {
   topics       = ["awala", "awala-gateway", "cloud"]
 
   ci_contexts = flatten([
-    ["ci / ci", "Terraform Cloud/Relaycorp/cloud-gateway"],
+    ["ci / ci-main", "Terraform Cloud/Relaycorp/cloud-gateway"],
+    [for name in local.cloud_gateways : "ci-${name}"],
     [for name in local.cloud_gateways : "Terraform Cloud/Relaycorp/gateway-${name}"],
   ])
   support_releases = false
