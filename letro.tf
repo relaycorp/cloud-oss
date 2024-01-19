@@ -10,7 +10,7 @@ module "letro_android" {
   description    = "Letro for Android"
   licence        = "gplv3"
   topics         = ["letro", "android"]
-  ci_contexts    = ["pr-ci / semantic-pr-title", "ci / test"]
+  ci_contexts    = ["ci / test"]
   support_issues = false
 }
 
