@@ -12,7 +12,7 @@ module "awala_courier_android" {
   licence      = "gplv3"
   topics       = ["awala", "awala-courier", "android"]
   main_branch  = "master"
-  ci_contexts  = ["Run static checks and tests"]
+  ci_contexts  = ["ci / test"]
 }
 
 module "awala_courier_ci" {
