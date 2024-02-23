@@ -1,6 +1,6 @@
 module "awala_lib_core_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "relaynet-core-js"
   description  = "JavaScript library for the core of Awala"
@@ -15,7 +15,7 @@ module "awala_lib_core_js" {
 
 module "awala_lib_testing_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "relaynet-testing-js"
   description  = "Testing utilities for Awala implementations in JavaScript"
@@ -29,14 +29,14 @@ module "awala_lib_testing_js" {
 
 module "awala_lib_keystore_vault_js" {
   source  = "relaycorp/oss-project/github//modules/archived"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name = "awala-keystore-vault-js"
 }
 
 module "awala_lib_keystore_db_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "keystore-db-js"
   description  = "TypeORM-based Private and Public Key Store extension for Awala in JavaScript"
@@ -48,7 +48,7 @@ module "awala_lib_keystore_db_js" {
 
 module "awala_lib_keystore_mongodb_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "awala-keystore-mongodb-js"
   description  = "MongoDB-based Certificate and Public Key Store for Awala in JavaScript"
@@ -60,7 +60,7 @@ module "awala_lib_keystore_mongodb_js" {
 
 module "awala_lib_keystore_gcp_secretmanager_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "awala-keystore-cloud-js"
   description  = "Multi-cloud Awala Key Store for server-side Node.js apps"
@@ -75,7 +75,7 @@ module "awala_lib_keystore_gcp_secretmanager_js" {
 
 module "awala_lib_pohttp_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "relaynet-pohttp-js"
   description  = "JavaScript library implementing the PoHTTP binding"
@@ -90,7 +90,7 @@ module "awala_lib_pohttp_js" {
 
 module "awala_lib_cogrpc_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "relaynet-cogrpc-js"
   description  = "JavaScript library implementing the CogRPC binding"
@@ -105,7 +105,7 @@ module "awala_lib_cogrpc_js" {
 
 module "awala_lib_poweb_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.0"
+  version = "2.13.3"
 
   name         = "relaynet-poweb-js"
   description  = "JavaScript implementation of the PoWeb binding"
