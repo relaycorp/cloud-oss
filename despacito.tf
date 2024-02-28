@@ -7,4 +7,9 @@ module "despacito_website" {
   homepage_url = "https://despacito.bot"
   licence      = "CC-BY-SA-4.0"
   topics       = ["ddos"]
+
+  ci_contexts = ["Cloudflare Pages"]
+
+  support_discussions = true
+  support_releases    = false
 }

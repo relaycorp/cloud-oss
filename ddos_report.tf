@@ -8,5 +8,8 @@ module "ddos_report" {
   licence      = "CC-BY-SA-4.0"
   topics       = ["ddos"]
 
+  ci_contexts = ["Cloudflare Pages"]
+
   support_discussions = true
+  support_releases    = false
 }
