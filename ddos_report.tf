@@ -6,9 +6,9 @@ module "ddos_report" {
   description  = "The DDoS Report"
   homepage_url = "https://ddos.report"
   licence      = "CC-BY-SA-4.0"
-  topics       = ["ddos"]
+  topics       = ["ddos", "botnets"]
 
-  ci_contexts = ["Cloudflare Pages"]
+  ci_contexts = ["Cloudflare Pages", "ci / test"]
 
   support_discussions = true
   support_releases    = false
