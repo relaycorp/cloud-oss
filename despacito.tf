@@ -8,7 +8,7 @@ module "despacito_website" {
   licence      = "CC-BY-SA-4.0"
   topics       = ["ddos"]
 
-  ci_contexts = ["Cloudflare Pages"]
+  ci_contexts = ["Cloudflare Pages: despacito", "ci / test"]
 
   support_discussions = true
   support_releases    = false
