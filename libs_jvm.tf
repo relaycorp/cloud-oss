@@ -1,6 +1,6 @@
 module "doh_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.5"
 
   name         = "doh-jvm"
   description  = "Basic DNS-over-HTTPS library for the JVM"
