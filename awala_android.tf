@@ -4,7 +4,7 @@ locals {
 
 module "awala_courier_android" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.5"
 
   name         = "relaynet-courier-android"
   description  = "Awala Courier for Android"
@@ -17,7 +17,7 @@ module "awala_courier_android" {
 
 module "awala_courier_ci" {
   source  = "relaycorp/oss-project/github//modules/android-app-ci"
-  version = "2.13.3"
+  version = "2.13.5"
 
   gcp_project_name = "relaynet-courier"
   gh_repo_name     = module.awala_courier_android.name
@@ -27,7 +27,7 @@ module "awala_courier_ci" {
 
 module "awala_lib_endpoint_android" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.5"
 
   name         = "awala-endpoint-android"
   description  = "High-level library for Android apps implementing Awala endpoints"
