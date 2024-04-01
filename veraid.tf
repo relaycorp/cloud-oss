@@ -4,7 +4,7 @@ locals {
 
 module "veraid_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.6"
 
   name         = "veraid-js"
   description  = "VeraId library for Node.js"
@@ -18,7 +18,7 @@ module "veraid_js" {
 
 module "veraid_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.6"
 
   name         = "veraid-jvm"
   description  = "VeraId library for the JVM"
@@ -32,7 +32,7 @@ module "veraid_jvm" {
 
 module "veraid_ca_server" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.6"
 
   name         = "veraid-authority"
   description  = "Cloud-native app that allows organisations to manage their VeraId members and the issuance of their respective bundles."
@@ -47,7 +47,7 @@ module "veraid_ca_server" {
 
 module "veraid_authority_tf_gcp" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.6"
 
   name         = "terraform-google-veraid-authority"
   description  = "Terraform module to manage an instance of VeraId Authority on GCP."
@@ -59,7 +59,7 @@ module "veraid_authority_tf_gcp" {
 
 module "veraid_authority_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.3"
+  version = "2.13.6"
 
   name         = "veraid-authority-js"
   description  = "JS client library for the VeraId Authority API"
