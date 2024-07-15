@@ -1,6 +1,6 @@
 module "ddos_report" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.13.10"
 
   name         = "ddos-report"
   description  = "The DDoS Report"
