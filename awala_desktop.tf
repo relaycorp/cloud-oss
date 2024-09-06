@@ -11,6 +11,7 @@ module "awala_gateway_desktop" {
 
   ci_contexts      = ["pr-ci / semantic-pr-title", "ci-ubuntu-latest", "ci-macos-latest", "ci-windows-latest"]
   support_releases = false
+  pages_enabled    = false
 }
 
 module "awala_ping_desktop" {
@@ -23,4 +24,6 @@ module "awala_ping_desktop" {
   licence      = "gplv3"
   topics       = ["awala", "awala-service-ping", "windows", "linux", "macos"]
   ci_contexts  = ["ci-ubuntu-latest", "ci-macos-latest", "ci-windows-latest"]
+
+  pages_enabled = false
 }

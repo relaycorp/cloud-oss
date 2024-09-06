@@ -12,4 +12,6 @@ module "despacito_website" {
 
   support_discussions = true
   support_releases    = false
+
+  pages_enabled = false
 }

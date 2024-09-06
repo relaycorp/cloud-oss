@@ -12,4 +12,6 @@ module "ddos_report" {
 
   support_discussions = true
   support_releases    = false
+
+  pages_enabled = false
 }

@@ -12,6 +12,7 @@ module "letro_android" {
   topics         = ["letro", "android"]
   ci_contexts    = ["ci / test"]
   support_issues = false
+  pages_enabled  = false
 }
 
 module "letro_android_ci" {
@@ -35,6 +36,8 @@ module "letro_cloud" {
 
   support_releases = false
   support_issues   = false
+
+  pages_enabled = false
 }
 
 module "letro_server" {
@@ -67,4 +70,6 @@ module "letro_lib_jvm" {
     "kotlin"
   ]
   ci_contexts = local.lib_jvm_ci_contexts
+
+  pages_enabled = false
 }

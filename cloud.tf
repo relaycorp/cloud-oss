@@ -18,4 +18,5 @@ module "cloud_gateway" {
     [for name in local.cloud_gateways : "Terraform Cloud/Relaycorp/gateway-${name}"],
   ])
   support_releases = false
+  pages_enabled    = false
 }
