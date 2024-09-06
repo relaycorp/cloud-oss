@@ -4,7 +4,7 @@ locals {
 
 module "letro_android" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name           = "letro-android"
   description    = "Letro for Android"
@@ -16,7 +16,7 @@ module "letro_android" {
 
 module "letro_android_ci" {
   source  = "relaycorp/oss-project/github//modules/android-app-ci"
-  version = "2.13.8"
+  version = "2.14.0"
 
   gcp_project_name = "letro-android"
   gh_repo_name     = module.letro_android.name
@@ -26,7 +26,7 @@ module "letro_android_ci" {
 
 module "letro_cloud" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name        = "letro-cloud"
   description = "Infrastructure as Code and configuration for Letro's centralised components"
@@ -39,7 +39,7 @@ module "letro_cloud" {
 
 module "letro_server" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name        = "letro-server"
   description = "Awala endpoint backend backing Letro's centralised service"
@@ -50,14 +50,12 @@ module "letro_server" {
   support_releases = false
   support_issues   = false
 
-  pages_source_path   = "/docs"
-  pages_source_branch = "main"
-  homepage_url        = "https://docs.relaycorp.tech/letro-server/"
+  homepage_url = "https://docs.relaycorp.tech/letro-server/"
 }
 
 module "letro_lib_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "letro-jvm"
   description  = "Letro core library for the JVM"
