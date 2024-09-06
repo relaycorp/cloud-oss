@@ -1,6 +1,6 @@
 module "despacito_website" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "despacito-website"
   description  = "Website for Despacito, a DDoS protection protocol"
@@ -12,4 +12,6 @@ module "despacito_website" {
 
   support_discussions = true
   support_releases    = false
+
+  pages_enabled = false
 }

@@ -1,6 +1,6 @@
 module "awala_lib_core_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-jvm"
   description  = "JVM library for the core of Awala"
@@ -14,13 +14,11 @@ module "awala_lib_core_jvm" {
   "android"]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
-
-  pages_source_path = "/"
 }
 
 module "awala_lib_testing_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-testing-jvm"
   description  = "Testing utilities for Awala implementations on the JVM"
@@ -35,13 +33,11 @@ module "awala_lib_testing_jvm" {
   ]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
-
-  pages_source_path = "/"
 }
 
 module "awala_lib_cogrpc_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-cogrpc-jvm"
   description  = "JVM implementation of the Awala CogRPC binding"
@@ -56,13 +52,11 @@ module "awala_lib_cogrpc_jvm" {
   ]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
-
-  pages_source_path = "/"
 }
 
 module "awala_lib_cogrpc_okhttp_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-cogrpc-okhttp-jvm"
   description  = "gRPC OkHTTP channel provider for Awala's CogRPC JVM implementation"
@@ -79,11 +73,13 @@ module "awala_lib_cogrpc_okhttp_jvm" {
   ]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
+
+  pages_enabled = false
 }
 
 module "awala_lib_poweb_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-poweb-jvm"
   description  = "JVM implementation of the Awala PoWeb binding"
@@ -98,13 +94,11 @@ module "awala_lib_poweb_jvm" {
   "android"]
   ci_contexts = local.lib_jvm_ci_contexts
   main_branch = "master"
-
-  pages_source_path = "/"
 }
 
 module "awala_lib_keystore_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "awala-keystore-file-jvm"
   description  = "JVM implementation of file-based Private and Public Key Stores for Awala"

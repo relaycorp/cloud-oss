@@ -4,7 +4,7 @@ locals {
 
 module "cloud_gateway" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "cloud-gateway"
   description  = "Infrastructure as Code and configuration for all Awala-Internet Gateways run by Relaycorp"
@@ -18,4 +18,5 @@ module "cloud_gateway" {
     [for name in local.cloud_gateways : "Terraform Cloud/Relaycorp/gateway-${name}"],
   ])
   support_releases = false
+  pages_enabled    = false
 }

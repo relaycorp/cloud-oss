@@ -4,7 +4,7 @@ locals {
 
 module "veraid_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "veraid-js"
   description  = "VeraId library for Node.js"
@@ -12,13 +12,11 @@ module "veraid_js" {
   licence      = "mit"
   topics       = local.veraid_topics
   ci_contexts  = local.nodejs_lib_ci_contexts
-
-  pages_source_path = "/"
 }
 
 module "veraid_jvm" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "veraid-jvm"
   description  = "VeraId library for the JVM"
@@ -26,13 +24,11 @@ module "veraid_jvm" {
   licence      = "apache2"
   topics       = local.veraid_topics
   ci_contexts  = local.lib_jvm_ci_contexts
-
-  pages_source_path = "/"
 }
 
 module "veraid_ca_server" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "veraid-authority"
   description  = "Cloud-native app that allows organisations to manage their VeraId members and the issuance of their respective bundles."
@@ -40,14 +36,11 @@ module "veraid_ca_server" {
   licence      = "agpl"
   topics       = local.veraid_topics
   ci_contexts  = ["ci / ci"]
-
-  pages_source_path   = "/docs"
-  pages_source_branch = "main"
 }
 
 module "veraid_authority_tf_gcp" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "terraform-google-veraid-authority"
   description  = "Terraform module to manage an instance of VeraId Authority on GCP."
@@ -55,11 +48,13 @@ module "veraid_authority_tf_gcp" {
   licence      = "agpl"
   topics       = ["veraid", "terraform", "gcp"]
   ci_contexts  = ["ci-module / ci", "ci-module-awala / ci", "ci-example / ci", "ci-example-awala / ci"]
+
+  pages_enabled = false
 }
 
 module "veraid_authority_js" {
   source  = "relaycorp/oss-project/github"
-  version = "2.13.8"
+  version = "2.14.0"
 
   name         = "veraid-authority-js"
   description  = "JS client library for the VeraId Authority API"
@@ -67,6 +62,4 @@ module "veraid_authority_js" {
   licence      = "mit"
   topics       = local.veraid_topics
   ci_contexts  = local.nodejs_lib_min_v20_ci_contexts
-
-  pages_source_path = "/"
 }
