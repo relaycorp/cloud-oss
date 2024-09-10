@@ -23,13 +23,6 @@ module "awala_lib_testing_js" {
   ci_contexts  = local.nodejs_lib_ci_contexts
 }
 
-module "awala_lib_keystore_vault_js" {
-  source  = "relaycorp/oss-project/github//modules/archived"
-  version = "2.14.0"
-
-  name = "awala-keystore-vault-js"
-}
-
 module "awala_lib_keystore_db_js" {
   source  = "relaycorp/oss-project/github"
   version = "2.14.0"
