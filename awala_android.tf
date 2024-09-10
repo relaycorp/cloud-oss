@@ -1,7 +1,3 @@
-locals {
-  bloco_iam_members = [for email in var.bloco_team_members : "user:${email}"]
-}
-
 module "awala_courier_android" {
   source  = "relaycorp/oss-project/github"
   version = "2.14.0"
@@ -23,8 +19,6 @@ module "awala_courier_ci" {
 
   gcp_project_name = "relaynet-courier"
   gh_repo_name     = module.awala_courier_android.name
-
-  firebase_test_lab_viewers = local.bloco_iam_members
 }
 
 module "awala_lib_endpoint_android" {
