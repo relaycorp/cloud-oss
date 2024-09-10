@@ -9,3 +9,4 @@ jobs:
     uses: relaycorp/shared-workflows/.github/workflows/tfmodule-ci.yml@main
     with:
       terraform_version: 1.5.3
+      terraform_validate_dummy_env_vars: "GITHUB_APP_ID,GITHUB_APP_INSTALLATION_ID,GITHUB_APP_PEM_FILE"

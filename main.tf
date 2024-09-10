@@ -22,4 +22,5 @@ terraform {
 
 provider "github" {
   owner = "relaycorp"
+  app_auth {} // Use environment variables
 }
