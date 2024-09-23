@@ -1,6 +1,6 @@
 module "awala_gateway_desktop" {
   source  = "relaycorp/oss-project/github"
-  version = "2.14.0"
+  version = "2.14.1"
 
   name         = "awala-gateway-desktop"
   description  = "Awala Gateway for Desktop"
@@ -16,7 +16,7 @@ module "awala_gateway_desktop" {
 
 module "awala_ping_desktop" {
   source  = "relaycorp/oss-project/github"
-  version = "2.14.0"
+  version = "2.14.1"
 
   name         = "awala-ping-desktop"
   description  = "Awala Ping for Desktop"
