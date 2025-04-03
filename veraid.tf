@@ -61,5 +61,5 @@ module "veraid_authority_js" {
   homepage_url = "https://www.npmjs.com/package/@relaycorp/veraid-authority"
   licence      = "mit"
   topics       = local.veraid_topics
-  ci_contexts  = local.nodejs_lib_min_v20_ci_contexts
+  ci_contexts  = local.nodejs_lib_ci_contexts
 }
